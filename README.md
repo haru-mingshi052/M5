@@ -21,14 +21,14 @@ m5-2：最終的に提出したコード（銅メダル）
 １．kaggleを開いてノートにM5のデータを追加  
 
 ２．githubからコードをノートに追加  
-!git clone https://github.com/haru-mingshi052/m5.git  
+!git clone https://github.com/haru-mingshi052/M5.git 
 
 ※一度手元に置いてから使う場合  
 １．kaggleにファイルをデータセットとしてアップロード  
 
 ２．ノートにM5のデータとアップロードしたデータセットを追加
   
-## データ加工をしたい場合  
+#### データ加工をしたい場合  
 ３．作業ディレクトリ(data_preprocessing)に移動  
 import os  
 path = "..input/データセット名/m5/m5-1/data_preprocessing"  
@@ -39,7 +39,7 @@ os.chdir(path)
 
 ５．出力ファイルをデータセットに
   
-## submissionファイルの作成をしたい場合  
+#### submissionファイルの作成をしたい場合  
 ３．作業ディレクトリ(m5-1 or m5-2)に移動  
 import os  
 path = "..input/データセット名/m5/m5-2"  
