@@ -17,34 +17,35 @@ m5-2：最終的に提出したコード（銅メダル）
 ・lightgbm  
 </br>  
 
-# 使いかた
-※githubから直接使う場合  
-１．kaggleを開いてノートにM5のデータを追加  
-
-２．githubからコードをノートに追加  
-!git clone https://github.com/haru-mingshi052/M5.git 
-
-※一度手元に置いてから使う場合  
+# 使いかた 
 １．kaggleにファイルをデータセットとしてアップロード  
 
 ２．ノートにM5のデータとアップロードしたデータセットを追加
   
 #### データ加工をしたい場合  
 ３．作業ディレクトリ(data_preprocessing)に移動  
+```py
 import os  
 path = "..input/データセット名/m5/m5-1/data_preprocessing"  
 os.chdir(path)
+```
 
 ４．ファイルの実行  
+```py
 !python create_data.py  
+```
 
 ５．出力ファイルをデータセットに
   
 #### submissionファイルの作成をしたい場合  
 ３．作業ディレクトリ(m5-1 or m5-2)に移動  
-import os  
-path = "..input/データセット名/m5/m5-2"  
+```py
+import os
+path = "..input/データセット名/m5/m5-2"
 os.chdir(path)
+```
 
 ４．ファイルの実行  
+```py
 !python submission.py --data_folder データセット名
+```
